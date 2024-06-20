@@ -1,8 +1,8 @@
 from fastapi import APIRouter, HTTPException, Depends
 from pymongo.collection import Collection
 from models.user_model import User
-from utils.database import db
-from utils.database import hash_password, verify_password
+from util.database  import db
+from util.security import hash_password, verify_password
 
 router = APIRouter()
 
