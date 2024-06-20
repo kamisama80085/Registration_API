@@ -1,5 +1,5 @@
 from fastapi import APIRouter, HTTPException
-from utils import db
+from utils.database import db
 
 router = APIRouter()
 users_collection = db["users"]

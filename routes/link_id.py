@@ -1,6 +1,6 @@
 from fastapi import APIRouter, HTTPException, Depends
 from pymongo.collection import Collection
-from utils import db
+from utils.database import db
 
 router = APIRouter()
 users_collection: Collection = db["users"]
